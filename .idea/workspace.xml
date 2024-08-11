@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca24bdbe-898b-4062-9fdb-bb7794e92e7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Philosophers.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DiningPhilosophers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Fork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Philosopher.java" afterDir="false" />
+    <list default="true" id="ca24bdbe-898b-4062-9fdb-bb7794e92e7a" name="Changes" comment="THreads in action">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Philosopher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Philosopher.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "EvgeniyPusser"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/EvgeniyPusser/Philosophers.git",
+    "accountId": "5728e25b-1ee7-4213-9b9a-4f9149e16c39"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -74,9 +79,20 @@
       <option name="presentableId" value="Default" />
       <updated>1723063223046</updated>
     </task>
+    <task id="LOCAL-00001" summary="THreads in action">
+      <option name="closed" value="true" />
+      <created>1723119723122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723119723122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="THreads in action" />
+    <option name="LAST_COMMIT_MESSAGE" value="THreads in action" />
   </component>
 </project>

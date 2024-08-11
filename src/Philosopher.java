@@ -1,7 +1,11 @@
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 public class Philosopher extends Thread {
     private final int id;
     private final Fork leftFork;
     private final Fork rightFork;
+    private final Lock lock = new ReentrantLock();
     private final int eatTimes;
 
     public Philosopher(int id, Fork leftFork, Fork rightFork, int eatTimes) {
@@ -16,14 +20,17 @@ public class Philosopher extends Thread {
             for (int i = 0; i < eatTimes; i++) {
                 // Think
                 System.out.println("Philosopher " + (id + 1) + " is thinking.");
-                Thread.sleep((long)(Math.random() * 100));
 
-                // Pick up forks
-                leftFork.pickUp();
-                System.out.println("Philosopher " + (id + 1) +" picked up left fork.");
-                rightFork.pickUp();
-                System.out.println("Philosopher " + (id + 1)  + " picked up right fork.");
 
+                lock.lock();
+                try {
+                    leftFork.pickUp();
+                    System.out.println("Philosopher " + (id + 1) + " picked up left fork.");
+                    rightFork.pickUp();
+                    System.out.println("Philosopher " + (id + 1) + " picked up right fork.");
+                } finally {
+                    lock.unlock();
+                }
                 // Eat
                 System.out.println("Philosopher " + (id + 1) + " is eating.");
                 Thread.sleep((long)(Math.random() * 100));
