@@ -20,6 +20,7 @@ public class Philosopher extends Thread {
             for (int i = 0; i < eatTimes; i++) {
                 // Think
                 System.out.println("Philosopher " + (id + 1) + " is thinking.");
+                Thread.sleep((long)(Math.random()*100));
 
 
                 lock.lock();
